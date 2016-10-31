@@ -4,3 +4,4 @@ C:\Users\Gray\Documents\GitHub\CS3060\GDD3000-ProgAssign2\GDD3000-ProgAssign2\bi
 C:\Users\Gray\Documents\GitHub\CS3060\GDD3000-ProgAssign2\GDD3000-ProgAssign2\obj\Debug\GDD3000-ProgAssign2.csprojResolveAssemblyReference.cache
 C:\Users\Gray\Documents\GitHub\CS3060\GDD3000-ProgAssign2\GDD3000-ProgAssign2\obj\Debug\GDD3000-ProgAssign2.exe
 C:\Users\Gray\Documents\GitHub\CS3060\GDD3000-ProgAssign2\GDD3000-ProgAssign2\obj\Debug\GDD3000-ProgAssign2.pdb
+C:\Users\Gray\Documents\GitHub\GDD-3000\GDD3000-ProgAssign2\GDD3000-ProgAssign2\bin\Debug\GDD3000-ProgAssign2.exe.config
