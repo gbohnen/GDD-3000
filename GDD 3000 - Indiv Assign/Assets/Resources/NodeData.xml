@@ -4,84 +4,94 @@
   <size>1:1</size>
   <node>
     <coords>0:0</coords>
-    <title>Title Text</title>
+    <title>The Island</title>
     <pages>
-      <page>Text page number 1</page>
-      <page>Test page number 2</page>
+      <page>You startle awake. The crunchy texture of wet sand grates against your cheek. Waves crash against the shore, somewhere just out of eyesight. Gulls caw off in the distance. You aren't entirely sure where you are, or what may have happened.</page>
+      <page>You sit up slowly, shaking the stiffness from your limbs. With a cursory dust-off, you stand up to take in your surroundings.</page>
+	<page>The vista before you is bleak. You're on a beach, quite a beautiful one, in fact, but there are no discernable landmarks or signs of civilization. Only dense jungle before you. Unending sand stretches in either direction, curving gently inland until it passes out of sight. </page>
+	<page>A quick 180 reveals a similar horizon behind you. A cerulean blue yawns wide as far as the eye can see. Dotted flecks of white break the expanse into large bands of blue. It's serene, but ultimately useless. You check the sun, and it hangs just shy of noon. This time of year, you might have 6 hours of daylight left.</page>
+	<page>As you glance back to the tree line, a glint of light out in the blue catches your eye. You can't really discern any details, but it looks metallic, and maybe useful.</page>
+	<page>What do you do?</page>
     </pages>
     <choices>
       <choice>
-        <text>Choice 1</text>
+        <text>Begin walking left</text>
         <desc>This is choice one</desc>
         <target>0:0</target>
-        <hpchange>-1</hpchange>
+        <hpchange>0</hpchange>
         <manachange>0</manachange>
         <staminachange>0</staminachange>
-        <foodchange>4</foodchange>
-        <waterchange>-8</waterchange>
-        <techchange>1</techchange>
-        <requirements>1:1:1:1:1:1</requirements>
-      </choice>
-      <choice>
-        <text>choice 2</text>
-        <desc>description 2</desc>
-        <target>0:0</target>
-        <hpchange>0</hpchange>
-        <manachange>1</manachange>
-        <staminachange>2</staminachange>
-        <foodchange>3</foodchange>
-        <waterchange>4</waterchange>
-        <techchange>5</techchange>
-        <requirements>2:2:2:2:2:2</requirements>
-      </choice>
-      <choice>
-        <text>choice 3</text>
-        <desc>description 3</desc>
-        <target>0:0</target>
-        <hpchange>0</hpchange>
-        <manachange>-1</manachange>
-        <staminachange>-2</staminachange>
-        <foodchange>-3</foodchange>
-        <waterchange>-4</waterchange>
-        <techchange>-5</techchange>
-        <requirements>3:3:3:3:3:3</requirements>
-      </choice>
-      <choice>
-        <text>choice 4</text>
-        <desc>description 4</desc>
-        <target>0:0</target>
-        <hpchange>3</hpchange>
-        <manachange>1</manachange>
-        <staminachange>2</staminachange>
         <foodchange>0</foodchange>
         <waterchange>0</waterchange>
         <techchange>0</techchange>
-        <requirements>4:4:4:4:4:4</requirements>
+        <requirements>0:0:0:0:0:0</requirements>
       </choice>
+
       <choice>
-        <text>tHIS IS A CHOICE 5</text>
-        <desc>description 5 </desc>
+        <text>Begin walking left</text>
+        <desc>This is choice one</desc>
         <target>0:0</target>
-        <hpchange>2</hpchange>
-        <manachange>-2</manachange>
-        <staminachange>-2</staminachange>
-        <foodchange>-2</foodchange>
-        <waterchange>2</waterchange>
-        <techchange>2</techchange>
-        <requirements>5:5:5:5:5:5</requirements>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
       </choice>
+
       <choice>
-        <text>choice 6</text>
-        <desc>description 6</desc>
+        <text>Begin walking left</text>
+        <desc>This is choice one</desc>
         <target>0:0</target>
-        <hpchange>-1</hpchange>
-        <manachange>1</manachange>
-        <staminachange>-1</staminachange>
-        <foodchange>1</foodchange>
-        <waterchange>-1</waterchange>
-        <techchange>1</techchange>
-        <requirements>6:6:6:6:6:6</requirements>
-      </choice>        
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
+      <choice>
+        <text>Begin walking left</text>
+        <desc>This is choice one</desc>
+        <target>0:0</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
+      <choice>
+        <text>Begin walking left</text>
+        <desc>This is choice one</desc>
+        <target>0:0</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
+      <choice>
+        <text>Begin walking left</text>
+        <desc>This is choice one</desc>
+        <target>0:0</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
     </choices>     
   </node>    
 </root>
