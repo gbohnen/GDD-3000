@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<root>
+  <!-- content of XML goes 'here'  -->
+  <size>1:1</size>
+  <node>
+    <coords>0:0</coords>
+    <title>Title Text</title>
+    <pages>
+      <page>Text page number 1</page>
+      <page>Test page number 2</page>
+    </pages>
+    <choices>
+      <choice>
+        <text>Choice 1</text>
+        <desc>This is choice one</desc>
+        <target>0:0</target>
+        <hpchange>-1</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>4</foodchange>
+        <waterchange>-8</waterchange>
+        <techchange>1</techchange>
+        <requirements>1:1:1:1:1:1</requirements>
+      </choice>
+      <choice>
+        <text>choice 2</text>
+        <desc>description 2</desc>
+        <target>0:0</target>
+        <hpchange>0</hpchange>
+        <manachange>1</manachange>
+        <staminachange>2</staminachange>
+        <foodchange>3</foodchange>
+        <waterchange>4</waterchange>
+        <techchange>5</techchange>
+        <requirements>2:2:2:2:2:2</requirements>
+      </choice>
+      <choice>
+        <text>choice 3</text>
+        <desc>description 3</desc>
+        <target>0:0</target>
+        <hpchange>0</hpchange>
+        <manachange>-1</manachange>
+        <staminachange>-2</staminachange>
+        <foodchange>-3</foodchange>
+        <waterchange>-4</waterchange>
+        <techchange>-5</techchange>
+        <requirements>3:3:3:3:3:3</requirements>
+      </choice>
+      <choice>
+        <text>choice 4</text>
+        <desc>description 4</desc>
+        <target>0:0</target>
+        <hpchange>3</hpchange>
+        <manachange>1</manachange>
+        <staminachange>2</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>4:4:4:4:4:4</requirements>
+      </choice>
+      <choice>
+        <text>tHIS IS A CHOICE 5</text>
+        <desc>description 5 </desc>
+        <target>0:0</target>
+        <hpchange>2</hpchange>
+        <manachange>-2</manachange>
+        <staminachange>-2</staminachange>
+        <foodchange>-2</foodchange>
+        <waterchange>2</waterchange>
+        <techchange>2</techchange>
+        <requirements>5:5:5:5:5:5</requirements>
+      </choice>
+      <choice>
+        <text>choice 6</text>
+        <desc>description 6</desc>
+        <target>0:0</target>
+        <hpchange>-1</hpchange>
+        <manachange>1</manachange>
+        <staminachange>-1</staminachange>
+        <foodchange>1</foodchange>
+        <waterchange>-1</waterchange>
+        <techchange>1</techchange>
+        <requirements>6:6:6:6:6:6</requirements>
+      </choice>        
+    </choices>     
+  </node>    
+</root>
