@@ -9,12 +9,12 @@ public class Story : MonoBehaviour
 {
 
     // stats
-    public float HitPoints = 2;
-    public float Mana = 2;
-    public float Stamina = 2;
-    public float Food = 3;
-    public float Water = 4;
-    public float Technology = 5;
+    public float HitPoints;
+    public float Mana;
+    public float Stamina;
+    public float Food;
+    public float Water;
+    public float Technology;
 
     // collections
     public StoryNode[,] nodes;
@@ -43,6 +43,9 @@ public class Story : MonoBehaviour
 
     public void SetCurrentNode(int x, int y)
     {
+        // set the current node
+        currCoords = new Vector2(x, y);
+
         // load the header
         titleText.text = nodes[x, y].Title;
 
@@ -118,10 +121,18 @@ public class Story : MonoBehaviour
         XmlDocument nodeDoc = new XmlDocument();
         nodeDoc.LoadXml(nodeFile.text);
 
-        // set size of node array. sadly, this cannot be done dynamically
+        // set size of node array. sadly, this cannot be done dynamically later in the 
         XmlNodeList size_ = nodeDoc.GetElementsByTagName("size");
         string[] size_t = size_[0].InnerText.Split(new char[] { ':' });
         nodes = new StoryNode[int.Parse(size_t[0]), int.Parse(size_t[1])];
+
+        // set stats
+        HitPoints = float.Parse(nodeDoc.GetElementsByTagName("starthp")[0].InnerText);
+        Mana = float.Parse(nodeDoc.GetElementsByTagName("startmana")[0].InnerText); 
+        Stamina = float.Parse(nodeDoc.GetElementsByTagName("startstamina")[0].InnerText);
+        Food = float.Parse(nodeDoc.GetElementsByTagName("startfood")[0].InnerText);
+        Water = float.Parse(nodeDoc.GetElementsByTagName("startwater")[0].InnerText);
+        Technology = float.Parse(nodeDoc.GetElementsByTagName("starttech")[0].InnerText);
 
         // get nodes
         XmlNodeList nodeList = nodeDoc.GetElementsByTagName("node");
@@ -231,6 +242,18 @@ public class Story : MonoBehaviour
 
     void SetChoices()
     {
+        if (Water <= 0)
+        {
+            Water = 0;
+            Mana--;
+        }
+
+        if (Food <= 0)
+        {
+            Food = 0;
+            Stamina--;
+        }
+
         for (int i = 0; i < nodes[(int)currCoords.x, (int)currCoords.y].Choices.Count; i++)
         {
             if (CheckButton(nodes[(int)currCoords.x, (int)currCoords.y].Choices[i].Requirements))

@@ -1,23 +1,71 @@
 <?xml version="1.0" ?>
 <root>
   <!-- content of XML goes 'here'  -->
-  <size>1:1</size>
+  <size>10:10</size>
+  <starthp>20</starthp>
+  <startmana>20</startmana>
+  <startstamina>20</startstamina>
+  <startfood>2</startfood>
+  <startwater>2</startwater>
+  <starttech>0</starttech>
+
+  <!-- Origin -->
   <node>
     <coords>0:0</coords>
     <title>The Island</title>
     <pages>
       <page>You startle awake. The crunchy texture of wet sand grates against your cheek. Waves crash against the shore, somewhere just out of eyesight. Gulls caw off in the distance. You aren't entirely sure where you are, or what may have happened.</page>
       <page>You sit up slowly, shaking the stiffness from your limbs. With a cursory dust-off, you stand up to take in your surroundings.</page>
-	<page>The vista before you is bleak. You're on a beach, quite a beautiful one, in fact, but there are no discernable landmarks or signs of civilization. Only dense jungle before you. Unending sand stretches in either direction, curving gently inland until it passes out of sight. </page>
-	<page>A quick 180 reveals a similar horizon behind you. A cerulean blue yawns wide as far as the eye can see. Dotted flecks of white break the expanse into large bands of blue. It's serene, but ultimately useless. You check the sun, and it hangs just shy of noon. This time of year, you might have 6 hours of daylight left.</page>
-	<page>As you glance back to the tree line, a glint of light out in the blue catches your eye. You can't really discern any details, but it looks metallic, and maybe useful.</page>
-	<page>What do you do?</page>
+      <page>First, a quick stock-check of your personal effects. Shirt, check. Pants, check. Shoes? Damn. That's going to be a problem.</page>
+	    <page>The vista before you is bleak. You're on a beach, quite a beautiful one, in fact, but there are no discernable landmarks or signs of civilization. Only dense jungle before you. Unending sand stretches in either direction, curving gently inland until it passes out of sight. </page>
+	    <page>A quick 180 reveals a similar horizon behind you. A cerulean blue yawns wide as far as the eye can see. Dotted flecks of white break the expanse into large bands of blue. It's serene, but ultimately useless. You check the sun, and it hangs just shy of noon. This time of year, you might have 6 hours of daylight left.</page>
+	    <page>As you glance back to the tree line, a glint of light out in the blue catches your eye. You can't really discern any details, but it looks metallic, and maybe useful.</page>
+	    <page>What do you do?</page>
     </pages>
     <choices>
       <choice>
-        <text>Begin walking left</text>
-        <desc>This is choice one</desc>
-        <target>0:0</target>
+        <text>Head to the left</text>
+        <desc>You don't know if this is the right way, but with no real information, who knows? Based on the position of the sun, this might be west.</desc>
+        <target>1:0</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>-1</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
+      <choice>
+        <text>Begin walking right</text>
+        <desc>You don't know if this is the right way, but with no real information, who knows? Based on the position of the sun, this might be east.</desc>
+        <target>1:0</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>-1</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
+      <choice>
+        <text>Investigate the glint</text>
+        <desc>You can swim out a ways and try to retrieve the object. It looks like something the size of a small suitcase.</desc>
+        <target>1:2</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>-4</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>-1</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
+      <choice>
+        <text>Venture inland</text>
+        <desc>The jungle foliage is dense, but you can probably blaze a trail. It will be slow going, and you may get lost.</desc>
+        <target>1:1</target>
         <hpchange>0</hpchange>
         <manachange>0</manachange>
         <staminachange>0</staminachange>
@@ -28,61 +76,9 @@
       </choice>
 
       <choice>
-        <text>Begin walking left</text>
-        <desc>This is choice one</desc>
-        <target>0:0</target>
-        <hpchange>0</hpchange>
-        <manachange>0</manachange>
-        <staminachange>0</staminachange>
-        <foodchange>0</foodchange>
-        <waterchange>0</waterchange>
-        <techchange>0</techchange>
-        <requirements>0:0:0:0:0:0</requirements>
-      </choice>
-
-      <choice>
-        <text>Begin walking left</text>
-        <desc>This is choice one</desc>
-        <target>0:0</target>
-        <hpchange>0</hpchange>
-        <manachange>0</manachange>
-        <staminachange>0</staminachange>
-        <foodchange>0</foodchange>
-        <waterchange>0</waterchange>
-        <techchange>0</techchange>
-        <requirements>0:0:0:0:0:0</requirements>
-      </choice>
-
-      <choice>
-        <text>Begin walking left</text>
-        <desc>This is choice one</desc>
-        <target>0:0</target>
-        <hpchange>0</hpchange>
-        <manachange>0</manachange>
-        <staminachange>0</staminachange>
-        <foodchange>0</foodchange>
-        <waterchange>0</waterchange>
-        <techchange>0</techchange>
-        <requirements>0:0:0:0:0:0</requirements>
-      </choice>
-
-      <choice>
-        <text>Begin walking left</text>
-        <desc>This is choice one</desc>
-        <target>0:0</target>
-        <hpchange>0</hpchange>
-        <manachange>0</manachange>
-        <staminachange>0</staminachange>
-        <foodchange>0</foodchange>
-        <waterchange>0</waterchange>
-        <techchange>0</techchange>
-        <requirements>0:0:0:0:0:0</requirements>
-      </choice>
-
-      <choice>
-        <text>Begin walking left</text>
-        <desc>This is choice one</desc>
-        <target>0:0</target>
+        <text>Wait for a bit</text>
+        <desc>You can sit and plan your course of action. Maybe someone will come along and lend you a hand.</desc>
+        <target>1:3</target>
         <hpchange>0</hpchange>
         <manachange>0</manachange>
         <staminachange>0</staminachange>
@@ -93,5 +89,160 @@
       </choice>
 
     </choices>     
-  </node>    
+  </node>
+
+  <!-- Walk from origin-->
+  <node>
+    <coords>1:0</coords>
+    <title>The Beach</title>
+    <pages>
+      <page>You being trekking along the pristine beach. The sand crunches beneath your toes; a comforting sound, in light of the circumstances.</page>
+      <page>...</page>
+      <page>......</page>
+      <page>You've been walking for about half an hour now. You've found very little of use. A few bird calls have interrupted the white background of sand and surf, but as of yet, you've seen no wildlife.</page>
+      <page>The sun has shifted slightly in the sky, maybe by an eighth-turn or so. By your estimates, you've probably shifted direction by about 45 degrees. Some quick math tells you this island (if it is an island) is probably not that big.</page>
+      <page>You need to pause and take stock of the situation again. Your feet are fine for now, but you'll need to figure out some sort of protection for any more serious hiking.</page>
+      <page>What do you do?</page>
+    </pages>
+    <choices>
+      <choice>
+        <text>Continue hiking</text>
+        <desc>You've only ben going for 30 minutes. You feel like you can definitely continue onward.</desc>
+        <target>2:0</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>-2</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
+      <choice>
+        <text>Try to make shoes</text>
+        <desc>You'll need these if you want any longevity out of your hike.</desc>
+        <target>2:1</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
+      <choice>
+        <text>Use your knife to make better shoes</text>
+        <desc>You can cut down some vines and leaves. These shoes will be more durable and functional</desc>
+        <target>2:2</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:3</requirements>
+      </choice>      
+    </choices>
+  </node>
+
+  <!-- Investigate object -->
+  <node>
+    <coords>1:2</coords>
+    <title>The ... Box?</title>
+    <pages>
+      <page>You wade out into the shallow water. It's colder than you expected. Before long, the water rises to your neck, and you begin to make small strokes towards the floating thing. The good news is: you can definitely swim.</page>
+      <page>The bad news: that thing is definitely floating further away. You start making broader strokes to try and keep up with it. You begin to match its pace, and gain distance.</page>
+      <page>Eventually you come abreast of the object. Upon closer inspection, it looks like a small crate. You can push it around, but it does restrict your swimming quite a bit. You'll have to doggie paddle your way back.</page>
+      <page>It's slow going, but you manage to shove the crate back to shore. The water-logged wood makes it incredibly heavy. You set it in the sand, and take a closer look.</page>
+      <page>The box is mainly built of short planks and nails. One of the joins looks like it's been loosened by the weathering its been put through. You can just barely fit your fingers underneath, but you manage to pry it loose.</page>
+      <page>You peer inside the box.</page>
+      <page>A bright reflection beams right at your eye. You reel back for a second, and adjust the box for a better look.</page>
+      <page>Whatever god(s) there may be seem to have smiled upon you today, as you realize you've found a crate full of machetes. You don't know why or how they got here, but you draw one from the box.</page>
+      <page>The blade seems pretty dull, though probably enough to cut through some underbrush. If you could sharpen it, you could do some real bushwhacking, but it'll do for now.</page>
+      <page>You take a couple test swings, and chop at a nearby palm tree. The blade sinks into the wood and sticks. Excellent.</page>
+      <page>You can't really carry the entire box, but you empty it out anyway. In total, there are five blades, plus the materials for the box itself.</page>
+      <page>This is a great find. The swim tired you out, but you have some quality survival tools now.</page>
+    </pages>
+    <choices>
+      <choice>
+        <text>Take a break</text>
+        <desc>Take stock of the situation. You need to rest up a little before taking another step.</desc>
+        <target>1:3</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>10</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
+      <choice>
+        <text>Practice with the machete</text>
+        <desc>Try out some moves and get a feel for the weight of the thing.</desc>
+        <target>1:3</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>-2</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>10</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+    </choices>
+  </node>
+  
+  <!-- Wait -->
+  <node>
+    <coords>1:3</coords>
+    <title>The Beach</title>
+    <pages>
+      <page>After some rigorous pacing, you plop down in the sand and try to figure out your situation. The last thing you remember before waking up was arriving in St. John for your company's annual retreat. Did you get on the boat? Did you black out after drinking too much that night?</page>
+      <page>As the questions swim around your head, you begin to think about your current location. Chances are good you didn't black out days at a time, which means you're on or near St. John. It means you probably aren't far from civilization, provided you can find it.</page>
+      <page>In any case, it's time to get going. You climb to your feet.</page>
+      <page>Where will you go?</page>
+    </pages>
+    <choices>
+      <choice>
+        <text>Head to the left</text>
+        <desc>You don't know if this is the right way, but with no real information, who knows? Based on the position of the sun, this might be west.</desc>
+        <target>1:0</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>-1</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
+      <choice>
+        <text>Begin walking right</text>
+        <desc>You don't know if this is the right way, but with no real information, who knows? Based on the position of the sun, this might be east.</desc>
+        <target>1:0</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>-1</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+
+      <choice>
+        <text>Into the Jungle</text>
+        <desc>The jungle foliage is dense, but you can probably blaze a trail. It will be slow going, and you may get lost.</desc>
+        <target>1:1</target>
+        <hpchange>0</hpchange>
+        <manachange>0</manachange>
+        <staminachange>0</staminachange>
+        <foodchange>0</foodchange>
+        <waterchange>0</waterchange>
+        <techchange>0</techchange>
+        <requirements>0:0:0:0:0:0</requirements>
+      </choice>
+    </choices>
+  </node>
+  
 </root>
